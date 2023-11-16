@@ -58,7 +58,7 @@ const project = () => {
     <div className="flex flex-col">
       <motion.p
       variants={fadeIn("","",0.1,1)}
-      className="mt-3 ml-24 text-white text-[17px] max-w-3xl leading-[30px]"> 
+      className="mt-2 ml-24 text-white text-[17px] max-w-3xl leading-[30px]"> 
      Following projects showcases my skills and experience through
           real-world examples of my work. Each project is briefly described with
           links to code repositories and live demos in it. It reflects my
