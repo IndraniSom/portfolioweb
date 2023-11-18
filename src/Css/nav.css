@@ -1,13 +1,13 @@
 
 nav{
     background:radial-gradient(at right center, rgb(56, 189, 248), rgb(49, 46, 129));
-    width:max-content;
     
-   
+    width:fit-content;
+   justify-content: center;
     padding:0.7rem 2.7rem ;
     top: 0;
     position:sticky;
-    left:50%;
+    margin-left:50%;
     transform:translateX(-50%);
     z-index: 1000;
     display:flex;
@@ -23,6 +23,7 @@ nav a{
     display:flex;
     color:var(--color-light);
     font-size:1.1rem;
+    text-align: center;
 }
 nav a:hover{
     background:rgba(0,0,0,0.5);
