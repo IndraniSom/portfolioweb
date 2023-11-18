@@ -14,10 +14,10 @@ const navbar = () => {
       <Html>
         
     <nav>
-  <a href='/'><IoHomeOutline /><div className='con'>Home</div></a >
-  <a href='/about'><FaRegUser /><div className='con'>About Me</div></a >
-    <a href ='/project'><MdOutlineLibraryBooks /><div className='con'>My Projects</div></a >
-    <a href ='/contact'><IoIosContact /><div className='con'>ContactMe</div></a >
+  <a href='src\pages\Home.jsx'><IoHomeOutline /><div className='con'>Home</div></a >
+  <a href='src\pages\About.jsx'><FaRegUser /><div className='con'>About Me</div></a >
+    <a href ='src\pages\Project.jsx'><MdOutlineLibraryBooks /><div className='con'>My Projects</div></a >
+    <a href ='src\pages\Contact.jsx'><IoIosContact /><div className='con'>ContactMe</div></a >
   </nav>
   
   </Html>
