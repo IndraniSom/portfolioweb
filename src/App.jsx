@@ -11,7 +11,7 @@ const App = () => {
   return (
     <main className='bg-[radial-gradient(ellipse_at_left,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black'>
       <Router>
-        <Navbar />
+      <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route
@@ -28,6 +28,7 @@ const App = () => {
             }
           />
         </Routes>
+        
       </Router>
     </main>
   );

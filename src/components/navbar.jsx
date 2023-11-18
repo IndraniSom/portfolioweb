@@ -1,24 +1,27 @@
 import React from 'react'
-import { NavLink } from "react-router-dom";
+
+import { Canvas } from '@react-three/fiber';
+import { Html } from '@react-three/drei';
+import { IoHomeOutline } from "react-icons/io5";
+import { FaRegUser } from "react-icons/fa";
+import { MdOutlineLibraryBooks } from "react-icons/md";
+import { IoIosContact } from "react-icons/io";
+import '../Css/nav.css'
 
 const navbar = () => {
   return (
-    <header className='header'>
-        <NavLink to="/" className="w-10 h-10 rounded-lg bg-white items-center justify-center flex font-bold shadow-md">
-            <p className='blue-gradient_text'>IS</p>
-        </NavLink>
-        <nav className='flex text-lg gap-7 font-medium'>
-        <NavLink to='/about' className={({ isActive }) => isActive ? "text-white" : "text-purple-600" }>
-          About
-        </NavLink>
-        <NavLink to='/project' className={({ isActive }) => isActive ? "text-white" : "text-purple-600"}>
-          MyProjects
-        </NavLink>
-        <NavLink to='/contact' className={({ isActive }) => isActive ? "text-white" : "text-purple-600"}>
-          Contact Me
-        </NavLink>
-        </nav>
-    </header>
+    <Canvas className='bg-transparent p-0 m-0'>
+      <Html>
+        
+    <nav>
+  <a href='/'><IoHomeOutline /><div className='con'>Home</div></a >
+  <a href='/about'><FaRegUser /><div className='con'>About Me</div></a >
+    <a href ='/project'><MdOutlineLibraryBooks /><div className='con'>My Projects</div></a >
+    <a href ='/contact'><IoIosContact /><div className='con'>ContactMe</div></a >
+  </nav>
+  
+  </Html>
+  </Canvas>   
   )
 }
 

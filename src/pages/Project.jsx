@@ -11,6 +11,7 @@ import {fadeIn,textVariant} from '../utils/motion'
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
+import Star from "./Star";
 const ProjectCarousel = () => {
   const settings = {
     dots: true,
@@ -36,20 +37,24 @@ const ProjectCarousel = () => {
   };
 
   return (
+    
     <div className="overflow-hidden">
     <Slider {...settings}>
       {projects.map((project, index) => (
         <ProjectCard key={`project-${index}`} index={index} {...project} />
       ))}
     </Slider>
+    
     </div>
+
   );
 };
 const project = () => {
   return (
     <>
+    <div>
     <div
-      className={`bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 min-h-screen xl: flex xl:flex flex-col px-10 gap-10 `}
+      className={` min-h-screen xl: flex xl:flex flex-col px-10 gap-10 overflow-hidden`}
     ><motion.div variants={textVariant()}
     className='flex-[0.75] bg-black-100 p-8 rounded-2xl mt-16 ml-24'>
       <p className={`${styles.sectionSubText} `}>What I have done so far</p>
@@ -76,6 +81,9 @@ const project = () => {
           />
         ))}
       </div>
+      <Star/>
+      </div>
+      
       </div>
       </>
   )
@@ -89,6 +97,7 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
+    <div>
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{
@@ -166,6 +175,8 @@ const ProjectCard = ({
           </div>
       </Tilt>
     </motion.div>
+    
+    </div>
   );
 };
 

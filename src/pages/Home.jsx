@@ -2,9 +2,10 @@ import { Suspense, useEffect, useRef, useState } from "react";
 import {Canvas} from '@react-three/fiber';
 import Loader from '../components/loader';
 import Laptop from '../models/laptop';
-import backgroundImage from '../assets/Background/home.jpg';
+
 import Model from '../models/plane';
 import HomeInfo from "../components/Homeinfo";
+import Star from "./Star";
 const Home = () => {
   const [currentStage, setCurrentStage] = useState(1);
   const [isRotating,setIsRotating]=useState(false);
@@ -42,16 +43,13 @@ const Home = () => {
   const [LaptopScale,LaptopPosition,LaptopRotation] =adjustLaptopForScreenSize();
   return (
     <section className='w-full h-screen relative'
-    style={{
-      backgroundImage: `url(${backgroundImage})`,
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-    }}>
+   >
+   
       <div className='absolute top-28 left-0 right-0 z-10 flex items-center justify-center'>
         {currentStage && <HomeInfo currentStage={currentStage} />}
       </div>
        <Canvas
-        className={`w-full h-screen bg-transparent ${
+        className={`w-full h-screen bg-transparent p-0 m-0 ${
           isRotating ? "cursor-grabbing" : "cursor-grab"
         }`}
         camera={{ near: 0.1, far: 1000 }}
@@ -90,6 +88,7 @@ const Home = () => {
           />
         </Suspense>
       </Canvas>
+      <Star/>
     </section>
   )
 }

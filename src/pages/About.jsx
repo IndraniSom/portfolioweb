@@ -10,7 +10,7 @@ const About = () => {
   return (
     <div className='felx flex-row'>
     <div
-    className={`bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 xl: flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
+    className={`flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
   >
     <motion.div
       variants={slideIn("left", "tween", 0.2, 1)}
