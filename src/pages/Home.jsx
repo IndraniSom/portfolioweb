@@ -5,7 +5,7 @@ import Laptop from '../models/laptop';
 
 import Model from '../models/plane';
 import HomeInfo from "../components/Homeinfo";
-import Star from "./Star";
+
 const Home = () => {
   const [currentStage, setCurrentStage] = useState(1);
   const [isRotating,setIsRotating]=useState(false);
@@ -48,6 +48,7 @@ const Home = () => {
       <div className='absolute top-28 left-0 right-0 z-10 flex items-center justify-center'>
         {currentStage && <HomeInfo currentStage={currentStage} />}
       </div>
+     
        <Canvas
         className={`w-full h-screen bg-transparent p-0 m-0 ${
           isRotating ? "cursor-grabbing" : "cursor-grab"
@@ -88,8 +89,9 @@ const Home = () => {
           />
         </Suspense>
       </Canvas>
-      <Star/>
+     
     </section>
+    
   )
 }
 export default Home
