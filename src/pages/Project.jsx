@@ -11,7 +11,7 @@ import {fadeIn,textVariant} from '../utils/motion'
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
-import Star from "./Star";
+import Particlebackground from '../particle-background';
 const ProjectCarousel = () => {
   const settings = {
     dots: true,
@@ -44,7 +44,7 @@ const ProjectCarousel = () => {
         <ProjectCard key={`project-${index}`} index={index} {...project} />
       ))}
     </Slider>
-    
+    <Particlebackground/>
     </div>
 
   );

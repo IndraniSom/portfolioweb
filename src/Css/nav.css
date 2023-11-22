@@ -1,6 +1,11 @@
 
 nav{
-    background:radial-gradient(at right center, rgb(56, 189, 248), rgb(49, 46, 129));
+    
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 0px 0px 25px 25px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      
     
     width:fit-content;
    justify-content: center;
@@ -12,8 +17,7 @@ nav{
     z-index: 1000;
     display:flex;
     gap:0.8rem;
-    border-radius: 3rem;
-    backdrop-filter: blur(20px);
+    
    
 }
 nav a{
