@@ -11,7 +11,7 @@ import {fadeIn,textVariant} from '../utils/motion'
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
-import Particlebackground from '../particle-background';
+
 const ProjectCarousel = () => {
   const settings = {
     dots: true,
@@ -37,14 +37,13 @@ const ProjectCarousel = () => {
   };
 
   return (
-    
     <div className="overflow-hidden">
-    <Slider {...settings}>
-      {projects.map((project, index) => (
-        <ProjectCard key={`project-${index}`} index={index} {...project} />
-      ))}
-    </Slider>
-    <Particlebackground/>
+      <Slider {...settings}>
+        {projects.map((project, index) => (
+          <ProjectCard key={`project-${index}`} index={index} {...project} />
+        ))}
+      </Slider>
+
     </div>
 
   );
@@ -52,6 +51,7 @@ const ProjectCarousel = () => {
 const project = () => {
   return (
     <>
+    
     <div>
     <div
       className={` min-h-screen xl: flex xl:flex flex-col px-10 gap-10 overflow-hidden`}
@@ -81,7 +81,7 @@ const project = () => {
           />
         ))}
       </div>
-      <Star/>
+      
       </div>
       
       </div>

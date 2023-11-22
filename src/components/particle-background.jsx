@@ -1,6 +1,6 @@
 import React from 'react'
 import Particles from 'react-particles';
-import particleconfig from '../../particle-config';
+import particleconfig from '../hoc/particle-config';
 const particlebackground = () => {
   return (
     <Particles params={particleconfig}>

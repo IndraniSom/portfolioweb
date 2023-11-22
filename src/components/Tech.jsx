@@ -2,7 +2,7 @@ import React from "react";
 
 import {BallCanvas} from "./Ball";
 
-import { technologies } from "../constants";
+import { skills } from "../constants";
 
 const Tech = () => {
   return (

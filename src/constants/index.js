@@ -14,8 +14,7 @@ import {
   mongodb,
   git,
   figma,
-  docker,
-  meta,
+  
   school,
   college,
   carrent,
@@ -58,7 +57,7 @@ const services = [
   },
 ];
 
-const technologies = [
+const skills = [
   {
     name: "HTML 5",
     icon: html,
@@ -71,26 +70,17 @@ const technologies = [
     name: "JavaScript",
     icon: javascript,
   },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
+  
   {
     name: "React JS",
     icon: reactjs,
   },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
+  
   {
     name: "Tailwind CSS",
     icon: tailwind,
   },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
+ 
   {
     name: "MongoDB",
     icon: mongodb,
@@ -107,10 +97,7 @@ const technologies = [
     name: "figma",
     icon: figma,
   },
-  {
-    name: "docker",
-    icon: docker,
-  },
+  
 ];
 
 const experiences = [
@@ -271,4 +258,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences,  projects };
+export { services, skills, experiences,  projects };
