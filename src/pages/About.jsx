@@ -21,9 +21,9 @@ const about = () => {
           <p className={styles.sectionSubText}>Hello I am <span className={styles.sectionHeadText}>Indrani Som</span></p>
           <p className={styles.sectionSubText}>I am a <span className={styles.sectionSubText}>Frontend Developer</span></p>
           <div className='py-10 flex flex-col'>
-        <h3 className='subhead-text'>My skills</h3>
+        <h3 className={styles.sectionHeadText}>My skills</h3>
 
-        <div className='mt-16 flex flex-wrap gap-12'>
+        <div className='mt-16 flex flex-wrap gap-12 justify-center'>
           {skills.map((skills) => (
             <div className='block-container w-20 h-20' key={skills.name}>
               <div className='btn-back rounded-xl' />
