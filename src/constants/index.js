@@ -8,7 +8,7 @@ import {
   html,
   css,
   reactjs,
-  
+  robo,
   tailwind,
  
   mongodb,
@@ -210,48 +210,50 @@ const projects = [
     linkedin_code_link:"https://github.com/IndraniSom/Silent-Boomers",
     live_link: "https://silentboomers1.netlify.app/",
   },
+  /*
+    {
+      name: "Semeasy",
+      description:
+        "A one stop solution for all the students who are preparing for their semester exams. It is a website where students can find all the previous year question papers of their respective subjects and also they can find the syllabus of their subjects.",
+      tags: [
+        {
+          name: "reactjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "firebase",
+          color: "green-text-gradient",
+        },
+        {
+          name: "nextjs",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: jobit,
+      source_code_link: "https://github.com/IndraniSom/To-Do-List",
+      linkedin_code_link:"https://github.com/IndraniSom/Silent-Boomers",
+      live_link: "https://todolist-indranisom.vercel.app/",
+    },
+  */
   {
-    name: "To-do App",
+    name: "Python Desktop Assistant",
     description:
-      "Web application that allows users to create, update, and delete tasks, and mark them as complete.Users can add tasks, set deadlines, mark tasks as completed, and sometimes prioritize or categorize them.",
+      "A desktop assistant which can do various tasks like opening a website,playing music,opening a software,opening a folder,opening a file,searching wikipedia,searching google,searching youtube,searching stackoverflow,searching google maps,searching google drive,searching",
     tags: [
       {
-        name: "html",
+        name: "python",
         color: "blue-text-gradient",
       },
       {
-        name: "css",
+        name: "django",
         color: "green-text-gradient",
       },
       {
-        name: "js",
+        name: "openai",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/IndraniSom/To-Do-List",
-    linkedin_code_link:"https://github.com/IndraniSom/Silent-Boomers",
-    live_link: "https://todolist-indranisom.vercel.app/",
-  },
-  {
-    name: "To-do App",
-    description:
-      "Web application that allows users to create, update, and delete tasks, and mark them as complete.Users can add tasks, set deadlines, mark tasks as completed, and sometimes prioritize or categorize them.",
-    tags: [
-      {
-        name: "html",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "css",
-        color: "green-text-gradient",
-      },
-      {
-        name: "js",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
+    image: robo,
     source_code_link: "https://github.com/IndraniSom/To-Do-List",
     linkedin_code_link:"https://github.com/IndraniSom/Silent-Boomers",
     live_link: "https://todolist-indranisom.vercel.app/",

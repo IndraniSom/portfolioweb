@@ -95,6 +95,8 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  linkedin_code_link,
+  live_link,
 }) => {
   return (
     <div>

@@ -22,7 +22,7 @@ import typescript from "../tech/typescript.png";
 import threejs from "../tech/threejs.svg";
 import play from "./play.png";
 import meta from "./company/meta.png";
-
+import robo from "./robo.png";
 import school from "../assets/school.png";
 import college from "../assets/college.png";
 
@@ -60,4 +60,5 @@ export {
   jobit,
   tripguide,
   play,
+  robo,
 };
