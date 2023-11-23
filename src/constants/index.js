@@ -10,11 +10,14 @@ import {
   reactjs,
   robo,
   tailwind,
- 
+ python,
+ c,
+ cpp,php,
+ sql,
   mongodb,
   git,
   figma,
-  
+  port,
   school,
   college,
   carrent,
@@ -67,6 +70,10 @@ const skills = [
     icon: css,
   },
   {
+    name: "Tailwind CSS",
+    icon: tailwind,
+  },
+  {
     name: "JavaScript",
     icon: javascript,
   },
@@ -76,15 +83,6 @@ const skills = [
     icon: reactjs,
   },
   
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
- 
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
   {
     name: "Three JS",
     icon: threejs,
@@ -97,6 +95,30 @@ const skills = [
     name: "figma",
     icon: figma,
   },
+  {
+    name: "python",
+    icon: python,
+  },
+  {
+    name: "C",
+    icon: c,
+  },
+  {
+    name: "C++",
+    icon: cpp,
+  },
+  {
+    name: "PHP",
+    icon: php,
+  },
+  {
+    name:"SQL",
+    icon:sql,
+  },
+  {
+    name: "MongoDB",
+    icon: mongodb,
+  }
   
 ];
 
@@ -254,9 +276,33 @@ const projects = [
       },
     ],
     image: robo,
-    source_code_link: "https://github.com/IndraniSom/To-Do-List",
+    source_code_link: "https://github.com/IndraniSom/Python-Desktop-Assistant",
     linkedin_code_link:"https://github.com/IndraniSom/Silent-Boomers",
     live_link: "https://todolist-indranisom.vercel.app/",
+  },
+  {
+    name: "My Portfolio Website",
+    description:
+      "A portfolio website which is made using reactjs and tailwindcss.",
+    tags: [
+      {
+        name: "reactjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "green-text-gradient",
+      },
+      {
+        name: "threejs",
+        color: "pink-text-gradient",
+      },
+      
+    ],
+    image: port,
+    source_code_link: "https://github.com/IndraniSom/portfolioweb",
+    linkedin_code_link:"https://github.com/IndraniSom/Silent-Boomers",
+    live_link: "https://indrani-som-portfolio.vercel.app/",
   },
 ];
 

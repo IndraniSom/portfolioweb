@@ -25,11 +25,15 @@ import meta from "./company/meta.png";
 import robo from "./robo.png";
 import school from "../assets/school.png";
 import college from "../assets/college.png";
-
+import port from "./port.png";
 import carrent from "./restaurant.png";
 import jobit from "./to-do.png";
 import tripguide from "./silentboomers.png";
-
+import python from "../tech/python.png";
+import c from "../tech/C.png";
+import cpp from "../tech/cpp.png";
+import php from "../tech/php.png";
+import sql from "../tech/sql.png";
 export {
   logo,
   backend,
@@ -61,4 +65,10 @@ export {
   tripguide,
   play,
   robo,
+  python,
+  c,
+  cpp,
+  php,
+  sql,
+  port,
 };
