@@ -12,7 +12,7 @@ import {fadeIn,textVariant} from '../utils/motion'
 import { Loader } from '@react-three/drei'
 import {experiences} from '../constants';
 import { useTypewriter, Cursor} from 'react-simple-typewriter'
-
+import LazyLoad from 'react-lazyload'
 
 const about = () => {
   const [text] = useTypewriter({
@@ -23,8 +23,10 @@ const about = () => {
   return (
     <>
       <div className={`xl:mt-20 flex xl:flex-row w-full flex-col-reverse gap-10 overflow-hidden justify-center`}>
-        <motion.div variants={slideIn("left", "tween", 0.2, 1)} className='flex-[0.75] bg-black-100 p-8 rounded-2xl ml-16 justify-center text-center'>
-          <p className={styles.sectionSubText}>Hello I am <span className={styles.sectionHeadText}>Indrani Som</span></p>
+        <motion.div variants={slideIn("left", "tween", 0.2, 1)} className='flex-[0.75] bg-black-100 p-8 rounded-2xl  justify-center text-center'>
+        <LazyLoad height={200} offset={100} once>
+            <p className={styles.sectionSubText}>Hello I am <span className={styles.sectionHeadText}>Indrani Som</span></p>
+          </LazyLoad>
           <p className={styles.sectionSubText}>I am a <span className={styles.sectionSubText}>{text}<Cursor cursorColor='var(--highlight)' /></span></p>
           <div className='py-10 flex flex-col'>
         <h3 className={styles.sectionHeadText}>My skills</h3>

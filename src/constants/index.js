@@ -179,7 +179,7 @@ const projects = [
     ],
     image: carrent,
     source_code_link: "https://github.com/IndraniSom/TastyMeal.github.io",
-    linkedin_code_link:"https://github.com/IndraniSom/Silent-Boomers",
+    linkedin_code_link:"https://www.linkedin.com/posts/indrani-som-258498248_webdevelopment-html-css-activity-7051511360295186433-dtNq?utm_source=share&utm_medium=member_android",
     live_link: "https://indranisom.github.io/TastyMeal.github.io/",
   },
   {
@@ -202,7 +202,7 @@ const projects = [
     ],
     image: jobit,
     source_code_link: "https://github.com/IndraniSom/To-Do-List",
-    linkedin_code_link:"https://github.com/IndraniSom/Silent-Boomers",
+    linkedin_code_link:"https://www.linkedin.com/posts/indrani-som-258498248_connections-oasisinfobyte-activity-7063840297927028738-WkPV?utm_source=share&utm_medium=member_android",
     live_link: "https://todolist-indranisom.vercel.app/",
   },
   {
@@ -229,7 +229,7 @@ const projects = [
     ],
     image: tripguide,
     source_code_link: "https://github.com/IndraniSom/Silent-Boomers",
-    linkedin_code_link:"https://github.com/IndraniSom/Silent-Boomers",
+    linkedin_code_link:"https://www.linkedin.com/posts/indrani-som-258498248_being-in-my-first-ever-hackathon-and-making-activity-7106702997220392960-PjA8?utm_source=share&utm_medium=member_android",
     live_link: "https://silentboomers1.netlify.app/",
   },
   /*
@@ -277,7 +277,7 @@ const projects = [
     ],
     image: robo,
     source_code_link: "https://github.com/IndraniSom/Python-Desktop-Assistant",
-    linkedin_code_link:"https://github.com/IndraniSom/Silent-Boomers",
+    linkedin_code_link:"https://www.linkedin.com/posts/indrani-som-258498248_voiceassistant-python-desktopassistant-activity-7106729066455547904-iycE?utm_source=share&utm_medium=member_android",
     live_link: "https://todolist-indranisom.vercel.app/",
   },
   {
@@ -303,6 +303,33 @@ const projects = [
     source_code_link: "https://github.com/IndraniSom/portfolioweb",
     linkedin_code_link:"https://github.com/IndraniSom/Silent-Boomers",
     live_link: "https://indrani-som-portfolio.vercel.app/",
+  },
+  {
+    name: "Text to Speech Converter",
+    description:
+      "It was a team project which we submitted on a intracollege where i was the team leader and worked on both frontend and backend.A comprehensive website for older generation to connect with each other. ",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "python",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: robo,
+    source_code_link: "https://github.com/IndraniSom/myrobo.github.io",
+    linkedin_code_link:"https://www.linkedin.com/posts/indrani-som-258498248_being-in-my-first-ever-hackathon-and-making-activity-7106702997220392960-PjA8?utm_source=share&utm_medium=member_android",
+    live_link: "https://silentboomers1.netlify.app/",
   },
 ];
 
