@@ -9,6 +9,9 @@ import HomeInfo from "../components/Homeinfo";
 const Home = () => {
   const [currentStage, setCurrentStage] = useState(1);
   const [isRotating,setIsRotating]=useState(false);
+  const handleRotation = () => {
+    setIsRotating(!isRotating);
+  }
   const adjustmodelForScreenSize = () => {
     let screenScale, screenPosition;
 
@@ -42,6 +45,7 @@ const Home = () => {
   const [modelScale, modelPosition] = adjustmodelForScreenSize();
   const [LaptopScale,LaptopPosition,LaptopRotation] =adjustLaptopForScreenSize();
   return (
+    
     <section className='w-full h-screen relative'
    >
    
@@ -91,7 +95,7 @@ const Home = () => {
       </Canvas>
      
     </section>
-    
+   
   )
 }
 export default Home

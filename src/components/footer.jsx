@@ -4,7 +4,9 @@ import instaLogo from '../assets/insta.png'
 import gfgLogo from '../assets/gfg.png'
 import linkedinLogo from '../assets/linkedin.png'
 import githubLogo from '../assets/github.png'
-
+import leetcodeLogo from '../assets/leetcode.png'
+import codechefLogo from '../assets/codechef.png'
+import hackerrankLogo from '../assets/hackerrank.png'
 const Footer = () => {
   return (
     <footer className='bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900  text-white py-10 px-5 animate__animated animate__fadeInUp'>
@@ -21,6 +23,18 @@ const Footer = () => {
         <a href='https://github.com/IndraniSom' target='_blank' rel='noreferrer' className='animate__animated animate__bounce'>
           <img src={githubLogo} alt='GitHub' className='h-6 w-6'/>
         </a>
+        <a href='https://www.codechef.com/users/indrani0' target='_blank' rel='noreferrer' className='animate__animated animate__bounce'>
+          <img src={codechefLogo} alt='Codechef' className='h-6 w-6'/>
+        </a>
+        <a href='https://leetcode.com/indrani0/' target='_blank' rel='noreferrer' className='animate__animated animate__bounce'>
+          <img src={leetcodeLogo} alt='Leetcode' className='h-6 w-6'/>
+        </a>
+        <a href='https://www.hackerrank.com/profile/indranisom39' target='_blank' rel='noreferrer' className='animate__animated animate__bounce'>
+          <img src={hackerrankLogo} alt='Hackedrrank' className='h-6 w-6'/>
+        </a>
+      </div>
+      <div className='mt-5 text-center'>
+        <h4 className='animate__animated animate__pulse'>Connect with<span></span> Me </h4>
       </div>
       <div className='mt-5 text-center'>
         <h4 className='animate__animated animate__pulse'>Made with<span></span> ❤️ by Indrani Som </h4>
