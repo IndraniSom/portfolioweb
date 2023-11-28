@@ -12,7 +12,7 @@ import {fadeIn,textVariant} from '../utils/motion'
 import { Loader } from '@react-three/drei'
 import {experiences} from '../constants';
 import { useTypewriter, Cursor} from 'react-simple-typewriter'
-
+import {SectionWrapper} from '../hoc'
 
 const about = () => {
   const [text] = useTypewriter({
@@ -21,7 +21,7 @@ const about = () => {
     onLoopDone: () => console.log(`loop completed after 3 runs.`)
   })
   return (
-    <>
+    <div id ='about'>
       <div className={`xl:mt-20 flex xl:flex-row w-full flex-col-reverse gap-10 overflow-hidden justify-center`}>
         <motion.div variants={slideIn("left", "tween", 0.2, 1)} className='flex-[0.75] bg-black-100 p-8 rounded-2xl  justify-center text-center'>
        
@@ -65,7 +65,7 @@ const about = () => {
         <h3 className={styles.sectionHeadText}>Let's Build something together</h3>
         <Link to="/contact" className="px-2 py-1 text-sm bg-blue-500 text-white rounded w-44 mb-9 mt-9 text-center">Let's Talk</Link>
       </div>
-    </>
+    </div>
   )
 }
 
@@ -89,4 +89,4 @@ const ExperienceCard = ({experience}) => (
   </VerticalTimelineElement>
 )
 
-export default about
+export default SectionWrapper(about, "");

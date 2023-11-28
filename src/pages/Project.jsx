@@ -183,4 +183,4 @@ const ProjectCard = ({
 };
 
 
-export default project
+export default SectionWrapper(project, "");

@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from "react-router-dom";
+import { NavLink,Link } from "react-router-dom";
 import { Canvas } from '@react-three/fiber';
 import { Html } from '@react-three/drei';
 import { IoHomeOutline } from "react-icons/io5";
@@ -18,7 +18,7 @@ const navbar = () => {
   
     <nav>
 <NavLink to='/' ><IoHomeOutline /><div className='con'>Home</div></NavLink >
-<NavLink to='/About'><FaRegUser /><div className='con'>About Me</div></NavLink >
+<Link to="/#about"><FaRegUser /><div className='con'>About Me</div></Link >
  <NavLink to ='/Project'><MdOutlineLibraryBooks /><div className='con'>My Projects</div></NavLink >
  <NavLink to ='/Contact'><IoIosContact /><div className='con'>ContactMe</div></NavLink >
   </nav>
