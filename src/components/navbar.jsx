@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink,Link } from "react-router-dom";
+import { NavLink,Link , useNavigate } from "react-router-dom";
 import { Canvas } from '@react-three/fiber';
 import { Html } from '@react-three/drei';
 import { IoHomeOutline } from "react-icons/io5";
@@ -13,9 +13,15 @@ import Contact from '../pages/Contact';
 import '../Css/nav.css'
 
 const navbar = () => {
+  const navigate = useNavigate()
+  const scrollElement = (ele) => {
+    navigate('/')
+    ele.current.scrollIntoView({behaviour: 'smooth'})
+  }
   return (
     
-  
+  // Ekhane either ekta <a> or <button> use kore ekta onclick event generete kor then
+  // //oi scrollElement er function ta de
     <nav>
 <NavLink to='/' ><IoHomeOutline /><div className='con'>Home</div></NavLink >
 <Link to="/#about"><FaRegUser /><div className='con'>About Me</div></Link >
