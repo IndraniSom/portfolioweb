@@ -4,7 +4,7 @@ import emailjs from "@emailjs/browser";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-import Model from "../models/connect5.png";
+import Model from "../models/connect2.png";
 import Star from "./Star";
 const Contact = () => {
   const formRef = useRef();
@@ -65,7 +65,7 @@ const Contact = () => {
 
   return (
     <div
-      className={`xl:mt-20 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
+      className={`xl:mt-20 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden `}
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
@@ -122,9 +122,10 @@ const Contact = () => {
         </form>
       </motion.div>
       <Star/>
-      <div className='lg:w-1/2 w-full lg:h-auto md:h-[550px] h-[350px]'>
-<img src={Model} alt='Connect Image' className='w-fit h-fit' />
+      <div className='lg:w-1/2 w-full lg:h-auto md:h-[550px] h-[350px] flex justify-center items-center'>
+        <img src={Model} alt='Connect Image' className='w-fit h-fit' />
       </div>
+      
     </div>
   );
 };

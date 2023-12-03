@@ -37,7 +37,7 @@ const ProjectCarousel = () => {
   };
 
   return (
-    <div className="overflow-hidden">
+    <div className="w-full h-full overflow-hidden">
       <Slider {...settings}>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
@@ -177,7 +177,7 @@ const ProjectCard = ({
           </div>
       </Tilt>
     </motion.div>
-    <Star/>
+   
     </div>
   );
 };

@@ -21,7 +21,7 @@ const navbar = () => {
   return (
     
   // Ekhane either ekta <a> or <button> use kore ekta onclick event generete kor then
-  // //oi scrollElement er function ta de
+  //oi scrollElement er function ta de
   <nav>
   <NavLink to='/'>
     <div className='icon-container'>
