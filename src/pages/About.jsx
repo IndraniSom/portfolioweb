@@ -13,7 +13,7 @@ import { Loader } from '@react-three/drei'
 import {experiences} from '../constants';
 import { useTypewriter, Cursor} from 'react-simple-typewriter'
 import {SectionWrapper} from '../hoc'
-
+import Star from "./Star";
 const about = () => {
   const [text] = useTypewriter({
     words: ['Full Stack Web Developer', 'AI/ML Enthusiast', 'Competitive Coder', 'Open Source and Hackathon Enthusiast', 'Student'],
@@ -65,6 +65,7 @@ const about = () => {
         <h3 className={styles.sectionHeadText}>Let's Build something together</h3>
         <Link to="/contact" className="px-2 py-1 text-sm bg-blue-500 text-white rounded w-44 mb-9 mt-9 text-center">Let's Talk</Link>
       </div>
+      <Star/>
     </div>
   )
 }

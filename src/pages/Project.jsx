@@ -11,7 +11,7 @@ import {fadeIn,textVariant} from '../utils/motion'
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
-
+import Star from "./Star";
 const ProjectCarousel = () => {
   const settings = {
     dots: true,
@@ -107,7 +107,7 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className='bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-amber-200 via-violet-600 to-sky-900 p-5 rounded-2xl sm:w-[360px] w-full ml-24'
+        className='bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-40 border border-gray-100 p-5 rounded-2xl sm:w-[360px] w-full ml-24 bg-white'
       >
         <div className='relative w-full h-[230px]'>
           <img
@@ -177,7 +177,7 @@ const ProjectCard = ({
           </div>
       </Tilt>
     </motion.div>
-    
+    <Star/>
     </div>
   );
 };

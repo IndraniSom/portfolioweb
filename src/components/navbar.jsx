@@ -22,12 +22,32 @@ const navbar = () => {
     
   // Ekhane either ekta <a> or <button> use kore ekta onclick event generete kor then
   // //oi scrollElement er function ta de
-    <nav>
-<NavLink to='/' ><IoHomeOutline /><div className='con'>Home</div></NavLink >
-<Link to="/#about"><FaRegUser /><div className='con'>About Me</div></Link >
- <NavLink to ='/Project'><MdOutlineLibraryBooks /><div className='con'>My Projects</div></NavLink >
- <NavLink to ='/Contact'><IoIosContact /><div className='con'>ContactMe</div></NavLink >
-  </nav>
+  <nav>
+  <NavLink to='/'>
+    <div className='icon-container'>
+      <IoHomeOutline />
+      <div className='con'>Home</div>
+    </div>
+  </NavLink>
+  <Link to="/#about">
+    <div className='icon-container'>
+      <FaRegUser />
+      <div className='con'>About Me</div>
+    </div>
+  </Link>
+  <NavLink to ='/Project'>
+    <div className='icon-container'>
+      <MdOutlineLibraryBooks />
+      <div className='con'>My Projects</div>
+    </div>
+  </NavLink>
+  <NavLink to ='/Contact'>
+    <div className='icon-container'>
+      <IoIosContact />
+      <div className='con'>Contact Me</div>
+    </div>
+  </NavLink>
+</nav>
   
 
   

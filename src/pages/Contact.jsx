@@ -4,7 +4,7 @@ import emailjs from "@emailjs/browser";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-import Model from "../models/connect3.png";
+import Model from "../models/connect5.png";
 import Star from "./Star";
 const Contact = () => {
   const formRef = useRef();
@@ -123,7 +123,7 @@ const Contact = () => {
       </motion.div>
       <Star/>
       <div className='lg:w-1/2 w-full lg:h-auto md:h-[550px] h-[350px]'>
-<img src={Model} alt='Connect Image' className='w-full h-auto' />
+<img src={Model} alt='Connect Image' className='w-fit h-fit' />
       </div>
     </div>
   );
