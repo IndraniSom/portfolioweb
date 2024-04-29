@@ -27,7 +27,7 @@ const Home = () => {
       </div>
       </div>
       
-      <img src={Model}/>
+      <img src={Model} className="hidden md:block" />
       </div>
      
     </motion.div>
