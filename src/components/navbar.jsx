@@ -1,15 +1,11 @@
 import React from 'react'
 import { NavLink,Link , useNavigate } from "react-router-dom";
-import { Canvas } from '@react-three/fiber';
-import { Html } from '@react-three/drei';
+
 import { IoHomeOutline } from "react-icons/io5";
 import { FaRegUser } from "react-icons/fa";
 import { MdOutlineLibraryBooks } from "react-icons/md";
 import { IoIosContact } from "react-icons/io";
-import Home from '../pages/Home';
-import About from '../pages/About';
-import Project from '../pages/Project';
-import Contact from '../pages/Contact';
+
 import '../Css/nav.css'
 
 const navbar = () => {
@@ -20,8 +16,7 @@ const navbar = () => {
   }
   return (
     
-  // Ekhane either ekta <a> or <button> use kore ekta onclick event generete kor then
-  //oi scrollElement er function ta de
+ 
   <nav>
   <NavLink to='/'>
     <div className='icon-container'>

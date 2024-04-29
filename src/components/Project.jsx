@@ -4,7 +4,7 @@ import {motion} from 'framer-motion';
 import {github} from '../assets';
 import {linkedin} from '../assets';
 import {play} from '../assets';
-import { SectionWrapper } from '../hoc';
+
 import {projects} from '../constants';
 import { styles } from "../styles";
 import {fadeIn,textVariant} from '../utils/motion'
@@ -183,4 +183,4 @@ const ProjectCard = ({
 };
 
 
-export default SectionWrapper(project, "");
+export default project;

@@ -12,7 +12,7 @@ import {fadeIn,textVariant} from '../utils/motion'
 import { Loader } from '@react-three/drei'
 import {experiences} from '../constants';
 import { useTypewriter, Cursor} from 'react-simple-typewriter'
-import {SectionWrapper} from '../hoc'
+
 import Star from "./Star";
 const about = () => {
   const [text] = useTypewriter({
@@ -90,4 +90,4 @@ const ExperienceCard = ({experience}) => (
   </VerticalTimelineElement>
 )
 
-export default SectionWrapper(about, "");
+export default about;
