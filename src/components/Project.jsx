@@ -72,7 +72,7 @@ const project = () => {
       </motion.p>
 
       </div>
-      <div className="mt-20 mb-6 flex felx-wrap gap-7 overflow-x-auto">
+      <div className="mt-20 mb-6 flex felx-wrap gap-7 overflow-x-auto scrollbar-hide">
         {projects.map((project,index)=>(
           <ProjectCard
           key={`project-${index}`}
