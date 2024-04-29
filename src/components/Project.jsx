@@ -52,7 +52,7 @@ const project = () => {
   return (
     <>
     
-    <div>
+    <div id='project'>
     <div
       className={` min-h-screen xl: flex xl:flex flex-col px-10 gap-10 overflow-hidden`}
     ><motion.div variants={textVariant()}
@@ -99,7 +99,7 @@ const ProjectCard = ({
   live_link,
 }) => {
   return (
-    <div id='project'>
+    <div >
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{
