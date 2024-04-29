@@ -10,43 +10,34 @@ import '../Css/nav.css'
 
 const navbar = () => {
   const navigate = useNavigate()
-  const scrollElement = (ele) => {
-    navigate('/')
-    ele.current.scrollIntoView({behaviour: 'smooth'})
-  }
   return (
-    
- 
-  <nav>
-  <NavLink to='/'>
-    <div className='icon-container'>
-      <IoHomeOutline />
-      <div className='con'>Home</div>
-    </div>
-  </NavLink>
-  <Link to="/#about">
-    <div className='icon-container'>
-      <FaRegUser />
-      <div className='con'>About Me</div>
-    </div>
-  </Link>
-  <NavLink to ='/Project'>
-    <div className='icon-container'>
-      <MdOutlineLibraryBooks />
-      <div className='con'>My Projects</div>
-    </div>
-  </NavLink>
-  <NavLink to ='/Contact'>
-    <div className='icon-container'>
-      <IoIosContact />
-      <div className='con'>Contact Me</div>
-    </div>
-  </NavLink>
-</nav>
-  
-
-  
-  )
+    <nav>
+      <a href="/#home">
+      <div className='icon-container'>
+        <IoHomeOutline />
+        <div className='con'>Home</div>
+      </div>
+    </a>
+      <a href="/#about">
+        <div className='icon-container'>
+          <FaRegUser />
+          <div className='con'>About Me</div>
+        </div>
+      </a>
+    <a href='/#project'>
+      <div className='icon-container'>
+        <MdOutlineLibraryBooks />
+        <div className='con'>My Projects</div>
+      </div>
+      </a>
+      <a href='/#contact'>
+      <div className='icon-container'>
+        <IoIosContact />
+        <div className='con'>Contact Me</div>
+      </div>
+      </a>
+    </nav>
+  );
 }
 
 export default navbar

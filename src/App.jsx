@@ -16,11 +16,11 @@ import Contact from "./components/Contact";
          
           <Home />
         </div>
-        <About />
-        <Project />
+        <About id="about"/>
+        <Project id="project"/>
         
-        <div className='relative z-0'>
-          <Contact />
+        <div className='relative z-0 ite'>
+          <Contact id="contact"/>
           <Footer />
         </div>
       </div>

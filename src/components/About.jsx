@@ -53,12 +53,7 @@ const about = () => {
             </VerticalTimeline>
           </div>
         </motion.div>
-        {/* <motion.div
-          variants={slideIn('right', 'tween', 0.2, 1)}
-          className='flex-[0.75] align-right'
-        >
-          // <img src={Model} alt='Model' className='w-full rounded-2xl h-auto' />
-        </motion.div> */}
+       
       </div>
       <div className='flex justify-center items-center flex-col text-white'>
         <p className={styles.sectionHeadText}>Have a project in mind?</p>
