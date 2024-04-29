@@ -2,10 +2,10 @@ import { BrowserRouter } from "react-router-dom";
 
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Project from "./pages/Project";
-import Contact from "./pages/Contact";
+import Home from "./components/Home";
+import About from "./components/About";
+import Project from "./components/Project";
+import Contact from "./components/Contact";
 
  const App = () => {
   return (
@@ -16,39 +16,16 @@ import Contact from "./pages/Contact";
          
           <Home />
         </div>
-        <About />
-        <Project />
+        <About id="about"/>
+        <Project id="project"/>
         
-        <div className='relative z-0'>
-          <Contact />
+        <div className='relative z-0 ite'>
+          <Contact id="contact"/>
           <Footer />
         </div>
       </div>
     </BrowserRouter>
-//    Different page route setup 
-// <main className='bg-[radial-gradient(ellipse_at_left,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black'>
-//       <Router>
-//       <Navbar />
-    
-//         <Routes>
-//           <Route path='/' element={<Home />} />
-//           <Route
-//             path='/*'
-//             element={
-//               <>
-//                 <Routes>
-//                   <Route path='/about' element={<About />} />
-//                   <Route path='/project' element={<Project />} />
-//                   <Route path='/contact' element={<Contact />} />
-//                 </Routes>
-//                 <Footer />
-//               </>
-//             }
-//           />
-//         </Routes>
-        
-//       </Router>
-//     </main>
+
    );
 };
 

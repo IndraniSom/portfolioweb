@@ -4,7 +4,7 @@ import {motion} from 'framer-motion';
 import {github} from '../assets';
 import {linkedin} from '../assets';
 import {play} from '../assets';
-import { SectionWrapper } from '../hoc';
+
 import {projects} from '../constants';
 import { styles } from "../styles";
 import {fadeIn,textVariant} from '../utils/motion'
@@ -52,7 +52,7 @@ const project = () => {
   return (
     <>
     
-    <div>
+    <div id='project'>
     <div
       className={` min-h-screen xl: flex xl:flex flex-col px-10 gap-10 overflow-hidden`}
     ><motion.div variants={textVariant()}
@@ -72,7 +72,7 @@ const project = () => {
       </motion.p>
 
       </div>
-      <div className="mt-20 mb-6 flex felx-wrap gap-7 overflow-x-auto">
+      <div className="mt-20 mb-6 flex felx-wrap gap-7 overflow-x-auto scrollbar-hide">
         {projects.map((project,index)=>(
           <ProjectCard
           key={`project-${index}`}
@@ -99,7 +99,7 @@ const ProjectCard = ({
   live_link,
 }) => {
   return (
-    <div>
+    <div >
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{
@@ -183,4 +183,4 @@ const ProjectCard = ({
 };
 
 
-export default SectionWrapper(project, "");
+export default project;

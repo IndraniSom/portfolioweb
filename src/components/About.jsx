@@ -11,27 +11,23 @@ import { skills } from "../constants";
 import {fadeIn,textVariant} from '../utils/motion'
 import { Loader } from '@react-three/drei'
 import {experiences} from '../constants';
-import { useTypewriter, Cursor} from 'react-simple-typewriter'
-import {SectionWrapper} from '../hoc'
+
+
 import Star from "./Star";
 const about = () => {
-  const [text] = useTypewriter({
-    words: ['Full Stack Web Developer', 'AI/ML Enthusiast', 'Competitive Coder', 'Open Source and Hackathon Enthusiast', 'Student'],
-    loop: true,
-    onLoopDone: () => console.log(`loop completed after 3 runs.`)
-  })
+ 
   return (
     <div id ='about'>
       <div className={`xl:mt-20 flex xl:flex-row w-full flex-col-reverse gap-10 overflow-hidden justify-center`}>
         <motion.div variants={slideIn("left", "tween", 0.2, 1)} className='flex-[0.75] bg-black-100 p-8 rounded-2xl  justify-center text-center'>
        
-            <p className={styles.sectionSubText}>Hello I am <span className={styles.sectionHeadText}>Indrani Som</span></p>
+            {/* <p className={styles.sectionSubText}>Hello I am <span className={styles.sectionHeadText}>Indrani Som</span></p> */}
         
-          <p className={styles.sectionSubText}>I am a <span className={styles.sectionSubText}>{text}<Cursor cursorColor='var(--highlight)' /></span></p>
+          
           <div className='py-10 flex flex-col'>
         <h3 className={styles.sectionHeadText}>My skills</h3>
 
-        <div className='mt-16 flex flex-wrap gap-12 justify-center'>
+        <div className='mt-16 flex flex-wrap gap-12 justify-center mb-20'>
           {skills.map((skills) => (
             <div className='block-container w-20 h-20' key={skills.name}>
               <div className='btn-back rounded-xl' />
@@ -53,12 +49,7 @@ const about = () => {
             </VerticalTimeline>
           </div>
         </motion.div>
-        {/* <motion.div
-          variants={slideIn('right', 'tween', 0.2, 1)}
-          className='flex-[0.75] align-right'
-        >
-          // <img src={Model} alt='Model' className='w-full rounded-2xl h-auto' />
-        </motion.div> */}
+       
       </div>
       <div className='flex justify-center items-center flex-col text-white'>
         <p className={styles.sectionHeadText}>Have a project in mind?</p>
@@ -90,4 +81,4 @@ const ExperienceCard = ({experience}) => (
   </VerticalTimelineElement>
 )
 
-export default SectionWrapper(about, "");
+export default about;

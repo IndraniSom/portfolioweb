@@ -6,6 +6,7 @@ export default {
   ],
   theme: {
     extend: {
+      
       colors: {
         gray: {
           200: "#D5DAE1"
@@ -24,8 +25,17 @@ export default {
       },
       boxShadow: {
         card: '0px 1px 2px 0px rgba(0, 0, 0, 0.05)'
-      }
+      },
+      scrollbarHide: {
+        '-ms-overflow-style': 'none',
+        'scrollbar-width': 'none',
+        '&::-webkit-scrollbar': {
+          display: 'none',
+        },
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    
+  ],
 }
