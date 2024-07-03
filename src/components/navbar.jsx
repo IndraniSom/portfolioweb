@@ -24,7 +24,7 @@ const navbar = () => {
   
   return (
     <nav>
-      <img src='/logo.png' alt='logo' className='hidden md:flex w-25 h-20 pl-1 md:pl-10 pt-[1rem] md:pt-[0.2rem]' />
+       <div className='hidden md:flex w-25 h-20 pl-1 md:pl-10 pt-[1rem] md:pt-[0.2rem] bg-[url("/logo.png")] dark:bg-[url("/whitelogo.png")] bg-no-repeat bg-contain bg-center' alt='logo'></div>
       <div className='flex pl-1 md:pl-40 '>
       <a href="/#home" className='text-white dark:text-black-500'>
       <div className='icon-container'>

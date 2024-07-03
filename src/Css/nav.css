@@ -28,6 +28,10 @@ nav a{
     color:black;
     font-size:1.1rem;
     text-align: center;
+    -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 /*nav a:hover{
     background:rgba(0,0,0,0.5);
