@@ -55,7 +55,7 @@ const project = () => {
     
     <div id='project'>
     <div
-      className={` w-full min-h-screen xl: flex xl:flex flex-col px-2 md:px-10 gap-10 overflow-hidden pl-5 md:pl-20`}
+      className={` w-full min-h-screen xl: flex xl:flex flex-col px-2 md:px-10 gap-10 overflow-hidden pl-0 md:pl-20`}
     ><motion.div variants={textVariant()}
     className='flex-[0.75] bg-transparent py-8 rounded-2xl mt-16 pl-5'>
       <p className={`${styles.sectionSubText} `}>What I have done so far</p>
