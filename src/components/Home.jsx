@@ -23,7 +23,7 @@ const Home = () => {
         <div className='items-start justify-start'>
     <img src="/homeme.png" alt="model" className='hidden md:flex w-100 h-100'/>
     </div>
-      <div className='flex flex-col items-end justify-end pt-9 md:px-20 px-10 '>
+      <div className='flex flex-col md:items-end  items-center justify-center md:justify-end pt-9 md:px-20 px-10 '>
       <p className="text-[#131842] text-3xl md:text-7xl font-recursive font-medium">HELLO THERE👋<br/> I AM INDRANI</p>
       {/* <h2 className="text-white text-8xl font-dreamavenue font-semibold"> I am Indrani Som  </h2> */}
       
