@@ -34,11 +34,7 @@ nav a{
     transition:0.3s;
 
 }*/
-.icon-container:hover {
-     
-    transform: scale(1.6); /* Increase the size of the container */
-    transition: all 0.3s ease; /* Smooth transition */
-  }
+
  .con{
     margin-top: 10%;
     

@@ -10,7 +10,7 @@ import hackerrankLogo from '../assets/hackerrank.png'
 const Footer = () => {
   return (
     <footer className='bg-green text-white py-10 px-5 animate__animated animate__fadeInUp'>
-      <div className='flex justify-center space-x-10 '>
+      <div className='flex justify-center space-x-4 md:space-x-10  '>
         <a href='https://instagram.com/404_coder_not_found?igshid=OGQ5ZDc2ODk2ZA==' target='_blank' rel='noreferrer' className='animate__animated animate__bounce'>
           <img src={instaLogo} alt='insta' className='h-6 w-6'/>
         </a>
