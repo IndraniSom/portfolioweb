@@ -8,7 +8,12 @@
   --blue-rgb: 237 245 255;
   --green-rgb: 125 161 35;
 }
-
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 body {
   font-family: "Work Sans", sans-serif;
 }
@@ -91,7 +96,8 @@ body:has(.card[data-color="green"]:hover) {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
-
+::-webkit-user-select{
+  display: none;}
 .logo {
   border-radius: 8.889px;
   background: #fff;
