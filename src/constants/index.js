@@ -152,56 +152,12 @@ const experiences = [
 
 
 const projects = [
+  
+  
   {
-    name: "TastyMeal",
+    name: "Travelo",
     description:
-      "Web-based platform that allows users to search for recipes, view nutritional information, and create a shopping list for ingredients.They can save the items in their cart also",
-    tags: [
-      {
-        name: "html",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "css",
-        color: "green-text-gradient",
-      },
-      {
-        name: "js",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/IndraniSom/TastyMeal.github.io",
-    linkedin_code_link:"https://www.linkedin.com/posts/indrani-som-258498248_webdevelopment-html-css-activity-7051511360295186433-dtNq?utm_source=share&utm_medium=member_android",
-    live_link: "https://indranisom.github.io/TastyMeal.github.io/",
-  },
-  {
-    name: "To-do App",
-    description:
-      "Web application that allows users to create, update, and delete tasks, and mark them as complete.Users can add tasks, set deadlines, mark tasks as completed, and sometimes prioritize or categorize them.",
-    tags: [
-      {
-        name: "html",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "css",
-        color: "green-text-gradient",
-      },
-      {
-        name: "js",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/IndraniSom/To-Do-List",
-    linkedin_code_link:"https://www.linkedin.com/posts/indrani-som-258498248_connections-oasisinfobyte-activity-7063840297927028738-WkPV?utm_source=share&utm_medium=member_android",
-    live_link: "https://todolist-indranisom.vercel.app/",
-  },
-  {
-    name: "Silent Boomers",
-    description:
-      "It was a team project which we submitted on a intracollege where i was the team leader and worked on both frontend and backend.A comprehensive website for older generation to connect with each other. ",
+      "It was a team project which is your ultimate tourguide ",
     tags: [
       {
         name: "html",
@@ -221,57 +177,9 @@ const projects = [
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/IndraniSom/Silent-Boomers",
-    linkedin_code_link:"https://www.linkedin.com/posts/indrani-som-258498248_being-in-my-first-ever-hackathon-and-making-activity-7106702997220392960-PjA8?utm_source=share&utm_medium=member_android",
-    live_link: "https://silentboomers1.netlify.app/",
-  },
-  /*
-    {
-      name: "Semeasy",
-      description:
-        "A one stop solution for all the students who are preparing for their semester exams. It is a website where students can find all the previous year question papers of their respective subjects and also they can find the syllabus of their subjects.",
-      tags: [
-        {
-          name: "reactjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "firebase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "nextjs",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/IndraniSom/To-Do-List",
-      linkedin_code_link:"https://github.com/IndraniSom/Silent-Boomers",
-      live_link: "https://todolist-indranisom.vercel.app/",
-    },
-  */
-  {
-    name: "Python Desktop Assistant",
-    description:
-      "A desktop assistant which can do various tasks like opening a website,playing music,opening a software,opening a folder,opening a file,searching wikipedia,searching google,searching youtube,searching stackoverflow,searching google maps,searching google drive,searching",
-    tags: [
-      {
-        name: "python",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "django",
-        color: "green-text-gradient",
-      },
-      {
-        name: "openai",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: robo,
-    source_code_link: "https://github.com/IndraniSom/Python-Desktop-Assistant",
-    linkedin_code_link:"https://www.linkedin.com/posts/indrani-som-258498248_voiceassistant-python-desktopassistant-activity-7106729066455547904-iycE?utm_source=share&utm_medium=member_android",
-    live_link: "https://todolist-indranisom.vercel.app/",
+    source_code_link: "https://github.com/LoadingMinds/Loading-Minds_EC107A",
+    linkedin_code_link:"/",
+    live_link: "https://loading-minds-ec-107-a.vercel.app/",
   },
   {
     name: "My Portfolio Website",
@@ -297,10 +205,11 @@ const projects = [
     linkedin_code_link:"https://github.com/IndraniSom/Silent-Boomers",
     live_link: "https://indrani-som-portfolio.vercel.app/",
   },
+ 
   {
-    name: "Text to Speech Converter",
+    name: "SC-CSE Website",
     description:
-      "It was a team project which we submitted on a intracollege where i was the team leader and worked on both frontend and backend.A comprehensive website for older generation to connect with each other. ",
+      "This is a community website and a team project",
     tags: [
       {
         name: "html",
@@ -314,15 +223,57 @@ const projects = [
         name: "js",
         color: "pink-text-gradient",
       },
+    ],
+    image: carrent,
+    source_code_link: "",
+    linkedin_code_link:"",
+    live_link: "https://sccseaot.vercel.app/",
+  },
+  {
+    name: "Python Desktop Assistant",
+    description:
+      "A desktop assistant which can do various tasks ",
+    tags: [
       {
         name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "django",
+        color: "green-text-gradient",
+      },
+      {
+        name: "openai",
         color: "pink-text-gradient",
       },
     ],
     image: robo,
-    source_code_link: "https://github.com/IndraniSom/myrobo.github.io",
-    linkedin_code_link:"https://www.linkedin.com/posts/indrani-som-258498248_being-in-my-first-ever-hackathon-and-making-activity-7106702997220392960-PjA8?utm_source=share&utm_medium=member_android",
-    live_link: "https://silentboomers1.netlify.app/",
+    source_code_link: "https://github.com/IndraniSom/Python-Desktop-Assistant",
+    linkedin_code_link:"https://www.linkedin.com/posts/indrani-som-258498248_voiceassistant-python-desktopassistant-activity-7106729066455547904-iycE?utm_source=share&utm_medium=member_android",
+    live_link: "https://todolist-indranisom.vercel.app/",
+  },
+  {
+    name: "To-do App",
+    description:
+      "Users can add tasks,mark tasks as completed",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "js",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jobit,
+    source_code_link: "https://github.com/IndraniSom/To-Do-List",
+    linkedin_code_link:"https://www.linkedin.com/posts/indrani-som-258498248_connections-oasisinfobyte-activity-7063840297927028738-WkPV?utm_source=share&utm_medium=member_android",
+    live_link: "https://todolist-indranisom.vercel.app/",
   },
 ];
 

@@ -74,7 +74,7 @@ const project = () => {
       </motion.p>
 
       </div>
-      <div className=" h-[500px] mt-20 mb-6 flex felx-wrap gap-7 overflow-x-auto scrollbar-hide">
+      <div className=" h-[900px] relative z-10 mb-6 flex felx-wrap gap-7 overflow-x-auto scrollbar-hide">
         {projects.map((project,index)=>(
           <ProjectCard
           key={`project-${index}`}
@@ -101,26 +101,81 @@ const ProjectCard = ({
   live_link,
 }) => {
   return (
-    <div >
+    
     <PinContainer
         title={live_link}
         href={live_link}
         
       >
-        <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
-          <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
-            {name}
-          </h3>
-          <div className="text-base !m-0 !p-0 font-normal">
-            <span className="text-black-500">
-              {description}
+        
+  <div className='w-full h-[13rem]'><img src={image} alt={name} className="w-full h-full object-cover" /></div>
+  <div className="flex basis-full w-full flex-col tracking-tight text-white sm:basis-1/2 h-full justify-center px-5 ">
+  <h3 className="max-w-xs !pb-2 !m-0 font-bold text-2xl text-[#FFFFEA]  pt-2">
+    {name}
+  </h3>
+  <div className="text-base !m-0 !p-0 font-normal">
+    <span className="text-black-500">
+      {description}
+              <br/>
+              {/* <div className='font-extrabold text-2xl pt-5 text-black'>Tech stacks Used</div><br/>
+              <div className=' flex flex-wrap gap-2 '>
+                
+          {tags.map((tag) => (
+            <p
+              key={`${name}-${tag.name}`}
+              className={`text-black-500 text-[14px] font-sans text-xl font-bold ${tag.color}`}
+            >
+              • {tag.name}
+            </p>
+          ))}
+        </div> */}
             </span>
+            <div className='font-extrabold text-2xl pt-2 text-[#FFFFEA]'>Links</div>
+            <div className='flex flex-row'>
+        <div className=' flex flex-row'>
+            <div
+              onClick={() => window.open(source_code_link, "_blank")}
+              className='black-gradient w-20 h-20 rounded-full flex justify-center items-center cursor-pointer'
+            >
+              <img
+                src={github}
+                alt='source code'
+                className='w-1/2 h-1/2 object-contain'
+              />
+            </div>
           </div>
+          <div className='flex flex-row'>
+            <div
+              onClick={() => window.open(linkedin_code_link, "_blank")}
+              className='black-gradient w-20 h-20 rounded-full flex justify-center items-center cursor-pointer'
+            >
+              <img
+                src={linkedin}
+                alt='source code'
+                className='w-1/2 h-1/2 object-contain'
+              />
+            </div>
+          </div>
+          <div className='flex flex-row'>
+            <div
+              onClick={() => window.open(live_link, "_blank")}
+              className='black-gradient w-20 h-20 rounded-full flex justify-center items-center cursor-pointer'
+            >
+              <img
+                src={play}
+                alt='source code'
+                className='w-1/2 h-1/2 object-contain'
+              />
+            </div>
+          </div>
+          </div>
+          </div>
+          
           {/* <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" /> */}
         </div>
       </PinContainer>
    
-    </div>
+   
   );
 };
 

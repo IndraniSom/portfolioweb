@@ -43,8 +43,9 @@ export const PinContainer = ({
           style={{
             transform: transform,
           }}
-          className="absolute left-1/2 p-4 top-1/2  flex justify-start items-start  rounded-2xl  shadow-[0_8px_16px_rgb(0_0_0/0.4)] bg-green border border-white/[0.1] group-hover/pin:border-white/[0.2] transition duration-700 overflow-hidden"
+          className="absolute   flex justify-start items-start  rounded-lg  shadow-[0_8px_16px_rgb(0_0_0/0.4)] bg-green border border-white/[0.1] group-hover/pin:border-white/[0.2] transition duration-700 overflow-hidden h-[27rem] w-[20rem] md:w-[23rem]"
         >
+          {/* left-1/2 p-4 top-1/2 */}
           <div className={cn(" relative z-50 ", className)}>{children}</div>
         </div>
       </div>
@@ -146,10 +147,10 @@ export const PinPerspective = ({
         </div>
 
         <>
-          <motion.div className="absolute right-1/2 bottom-1/2 bg-gradient-to-b from-transparent to-cyan-500 translate-y-[14px] w-px h-20 group-hover/pin:h-40 blur-[2px]" />
-          <motion.div className="absolute right-1/2 bottom-1/2 bg-gradient-to-b from-transparent to-cyan-500 translate-y-[14px] w-px h-20 group-hover/pin:h-40  " />
-          <motion.div className="absolute right-1/2 translate-x-[1.5px] bottom-1/2 bg-cyan-600 translate-y-[14px] w-[4px] h-[4px] rounded-full z-40 blur-[3px]" />
-          <motion.div className="absolute right-1/2 translate-x-[0.5px] bottom-1/2 bg-cyan-300 translate-y-[14px] w-[2px] h-[2px] rounded-full z-40 " />
+          <motion.div className="absolute right-1/2 bottom-1/2 bg-gradient-to-b from-transparent to-cyan-600 translate-y-[14px] w-px h-5 group-hover/pin:h-40 blur-[2px]" />
+          <motion.div className="absolute right-1/2 bottom-1/2 bg-gradient-to-b from-transparent to-cyan-600 translate-y-[14px] w-px h-5 group-hover/pin:h-40  " />
+          <motion.div className="absolute right-1/2 translate-x-[1.5px] bottom-1/2 bg-cyan-600 translate-y-[14px] w-[1px] h-[1px] rounded-full z-40 blur-[3px]" />
+          <motion.div className="absolute right-1/2 translate-x-[0.5px] bottom-1/2 bg-cyan-600 translate-y-[14px] w-[1px] h-[1px] rounded-full z-40 " />
         </>
       </div>
     </motion.div>
