@@ -64,7 +64,7 @@ const Contact = () => {
           className='mt-12 flex flex-col gap-8'
         >
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Name</span>
+            <span className='text-white dark:text-black-500 font-medium mb-4'>Your Name</span>
             <input
               type='text'
               name='name'
@@ -76,7 +76,7 @@ const Contact = () => {
             />
           </label>
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your email</span>
+            <span className='text-white dark:text-black-500 font-medium mb-4'>Your email</span>
             <input
               type='email'
               name='email'
@@ -88,7 +88,7 @@ const Contact = () => {
             />
           </label>
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Message</span>
+            <span className='text-white dark:text-black-500 font-medium mb-4'>Your Message</span>
             <input 
             type="text"
               name='message'
@@ -102,7 +102,7 @@ const Contact = () => {
 
           <button
             type='submit'
-            className='bg-tertiary py-3 px-8 rounded-xl bg-green outline-none w-fit text-white font-bold shadow-md shadow-primary'
+            className='bg-tertiary py-3 px-8 rounded-xl bg-green dark:bg-gray-200 outline-none w-fit text-white font-bold shadow-md shadow-primary'
           >
             Send
           </button>

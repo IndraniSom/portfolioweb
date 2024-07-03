@@ -7,14 +7,16 @@ import About from "./components/About";
 import Project from "./components/Project";
 import Contact from "./components/Contact";
 
+
  const App = () => {
   return (
     <BrowserRouter>
       <div className='relative w-full max-h-screen font-poppins '>
      
         
-         <div className="bg-background bg-grid-black/[0.2]">
+         <div className="bg-background dark:bg-blackbg bg-grid-black/[0.2] dark:bg-dot-black-500/[0.3]">
          <Navbar/>
+         
           <Home id="home" />
         
         <About id="about"/>

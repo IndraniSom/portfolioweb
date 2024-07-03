@@ -56,8 +56,12 @@ const project = () => {
     <div id='project'>
     <div
       className={` w-full min-h-screen xl: flex xl:flex flex-col px-2 md:px-10 gap-10 overflow-hidden pl-0 md:pl-20`}
-    ><motion.div variants={textVariant()}
-    className='flex-[0.75] bg-transparent py-8 rounded-2xl mt-16 pl-5'>
+    >
+      <div className='pb-5 '> 
+      {/* bg-paper bg-cover bg-no-repeat */}
+      <motion.div variants={textVariant()}
+    
+    className='flex-[0.75] bg-transparent py-8 rounded-2xl mt-16 pl-10 '>
       <p className={`${styles.sectionSubText} `}>What I have done so far</p>
       <h2 className={`${styles.sectionHeadText}`}> MY Projects.</h2>
      
@@ -65,7 +69,7 @@ const project = () => {
     <div className="flex flex-col">
       <motion.p
       variants={fadeIn("","",0.1,1)}
-      className="mt-2 pl-5 text-white text-[17px] max-w-3xl leading-[30px]"> 
+      className="mt-2 pl-10 text-white dark:text-black-500 text-[17px] max-w-3xl leading-[30px]   "> 
      Following projects showcases my skills and experience through
           real-world examples of my work. Each project is briefly described with
           links to code repositories and live demos in it. It reflects my
@@ -73,6 +77,7 @@ const project = () => {
           and manage projects effectively.
       </motion.p>
 
+      </div>
       </div>
       <div className=" h-[900px] relative z-10 mb-6 flex felx-wrap gap-7 overflow-x-auto scrollbar-hide">
         {projects.map((project,index)=>(
@@ -109,12 +114,12 @@ const ProjectCard = ({
       >
         
   <div className='w-full h-[13rem]'><img src={image} alt={name} className="w-full h-full object-cover" /></div>
-  <div className="flex basis-full w-full flex-col tracking-tight text-white sm:basis-1/2 h-full justify-center px-5 ">
-  <h3 className="max-w-xs !pb-2 !m-0 font-bold text-2xl text-[#FFFFEA]  pt-2">
+  <div className="flex basis-full w-full flex-col tracking-tight text-white dark:text-black-500 sm:basis-1/2 h-full justify-center px-5 ">
+  <h3 className="max-w-xs !pb-2 !m-0 font-bold text-2xl text-[#FFFFEA] dark:text-white  pt-2">
     {name}
   </h3>
   <div className="text-base !m-0 !p-0 font-normal">
-    <span className="text-black-500">
+    <span className="text-black-500 dark:text-blackbg">
       {description}
               <br/>
               {/* <div className='font-extrabold text-2xl pt-5 text-black'>Tech stacks Used</div><br/>
@@ -130,7 +135,7 @@ const ProjectCard = ({
           ))}
         </div> */}
             </span>
-            <div className='font-extrabold text-2xl pt-2 text-[#FFFFEA]'>Links</div>
+            <div className='font-extrabold text-2xl pt-2 text-[#FFFFEA] dark:text-blackbg'>Links</div>
             <div className='flex flex-row'>
         <div className=' flex flex-row'>
             <div

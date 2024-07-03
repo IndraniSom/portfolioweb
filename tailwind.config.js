@@ -7,6 +7,7 @@ const {
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -16,10 +17,11 @@ module.exports = {
     extend: {
       backgroundImage: {
         'home': "url(/Home.png)",
-        // Add other background images here
+        'paper':"url(/paper.png)",// Add other background images here
       },
       colors: {
         white: "#000",
+        blackbg:"#1A2130",
         background2: "#C8ADFF",
         background:"#FEFEFE",
         gray: {

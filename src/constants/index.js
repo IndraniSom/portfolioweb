@@ -230,7 +230,7 @@ const projects = [
     live_link: "https://sccseaot.vercel.app/",
   },
   {
-    name: "Python Desktop Assistant",
+    name: "Desktop Assistant",
     description:
       "A desktop assistant which can do various tasks ",
     tags: [
