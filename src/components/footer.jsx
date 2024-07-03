@@ -9,8 +9,8 @@ import codechefLogo from '../assets/codechef.png'
 import hackerrankLogo from '../assets/hackerrank.png'
 const Footer = () => {
   return (
-    <footer className='bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900  text-white py-10 px-5 animate__animated animate__fadeInUp'>
-      <div className='flex justify-center space-x-10'>
+    <footer className='bg-green text-white py-10 px-5 animate__animated animate__fadeInUp'>
+      <div className='flex justify-center space-x-10 '>
         <a href='https://instagram.com/404_coder_not_found?igshid=OGQ5ZDc2ODk2ZA==' target='_blank' rel='noreferrer' className='animate__animated animate__bounce'>
           <img src={instaLogo} alt='insta' className='h-6 w-6'/>
         </a>
@@ -33,11 +33,11 @@ const Footer = () => {
           <img src={hackerrankLogo} alt='Hackedrrank' className='h-6 w-6'/>
         </a>
       </div>
-      <div className='mt-5 text-center'>
+      <div className='mt-5 text-center font-semibold'>
         <h4 className='animate__animated animate__pulse'>Connect with<span></span> Me </h4>
       </div>
-      <div className='mt-5 text-center'>
-        <h4 className='animate__animated animate__pulse'>Made with<span></span> ❤️ by Indrani Som </h4>
+      <div className='mt-5 text-center font-semibold'>
+        <h4 className='animate__animated animate__pulse '>Made with<span></span> ❤️ by Indrani Som </h4>
       </div>
     </footer>
   )

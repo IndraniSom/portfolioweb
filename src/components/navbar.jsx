@@ -1,4 +1,4 @@
-import React from 'react'
+import {React,useState} from 'react'
 import { NavLink,Link , useNavigate } from "react-router-dom";
 
 import { IoHomeOutline } from "react-icons/io5";
@@ -9,7 +9,19 @@ import { IoIosContact } from "react-icons/io";
 import '../Css/nav.css'
 
 const navbar = () => {
-  const navigate = useNavigate()
+  const [isActive, setIsActive] = useState(false);
+  const navigate = useNavigate();
+
+  const toggleNavbar = () => {
+    setIsActive(!isActive);
+    // Apply the 3D transformation to each card
+    const cards = document.querySelectorAll(".card");
+    cards.forEach(card => {
+      card.classList.toggle("show", isActive);
+    });
+  };
+
+  
   return (
     <nav>
       <a href="/#home">

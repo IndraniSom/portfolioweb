@@ -4,7 +4,7 @@ import {motion} from 'framer-motion';
 import {github} from '../assets';
 import {linkedin} from '../assets';
 import {play} from '../assets';
-
+import { SparklesCore } from './ui/sparkles';
 import {projects} from '../constants';
 import { styles } from "../styles";
 import {fadeIn,textVariant} from '../utils/motion'
@@ -12,6 +12,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 import Star from "./Star";
+import { PinContainer } from './ui/3d-pin';
 const ProjectCarousel = () => {
   const settings = {
     dots: true,
@@ -37,7 +38,7 @@ const ProjectCarousel = () => {
   };
 
   return (
-    <div className="w-full h-full overflow-hidden">
+    <div className="w-full h-full overflow-x-hidden overflow-y-hidden">
       <Slider {...settings}>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
@@ -54,16 +55,17 @@ const project = () => {
     
     <div id='project'>
     <div
-      className={` min-h-screen xl: flex xl:flex flex-col px-10 gap-10 overflow-hidden`}
+      className={` w-full min-h-screen xl: flex xl:flex flex-col px-2 md:px-10 gap-10 overflow-hidden pl-5 md:pl-20`}
     ><motion.div variants={textVariant()}
-    className='flex-[0.75] bg-black-100 p-8 rounded-2xl mt-16 ml-24'>
+    className='flex-[0.75] bg-transparent py-8 rounded-2xl mt-16 pl-5'>
       <p className={`${styles.sectionSubText} `}>What I have done so far</p>
       <h2 className={`${styles.sectionHeadText}`}> MY Projects.</h2>
+     
     </motion.div>
     <div className="flex flex-col">
       <motion.p
       variants={fadeIn("","",0.1,1)}
-      className="mt-2 ml-24 text-white text-[17px] max-w-3xl leading-[30px]"> 
+      className="mt-2 pl-5 text-white text-[17px] max-w-3xl leading-[30px]"> 
      Following projects showcases my skills and experience through
           real-world examples of my work. Each project is briefly described with
           links to code repositories and live demos in it. It reflects my
@@ -72,7 +74,7 @@ const project = () => {
       </motion.p>
 
       </div>
-      <div className="mt-20 mb-6 flex felx-wrap gap-7 overflow-x-auto scrollbar-hide">
+      <div className=" h-[500px] mt-20 mb-6 flex felx-wrap gap-7 overflow-x-auto scrollbar-hide">
         {projects.map((project,index)=>(
           <ProjectCard
           key={`project-${index}`}
@@ -100,83 +102,23 @@ const ProjectCard = ({
 }) => {
   return (
     <div >
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className='bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-40 border border-gray-100 p-5 rounded-2xl sm:w-[360px] w-full ml-24 bg-white'
-      >
-        <div className='relative w-full h-[230px]'>
-          <img
-            src={image}
-            alt='project_image'
-            className='w-full h-full object-cover rounded-2xl'
-          />
-          
-
-          
-          
-        </div>
+    <PinContainer
+        title={live_link}
+        href={live_link}
         
-
-        <div className='mt-5'>
-          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
-          <p className='text-white mt-2 text-secondary text-[14px]'>{description}</p>
+      >
+        <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
+          <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
+            {name}
+          </h3>
+          <div className="text-base !m-0 !p-0 font-normal">
+            <span className="text-black-500">
+              {description}
+            </span>
+          </div>
+          {/* <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" /> */}
         </div>
-
-        <div className='mt-4 flex flex-wrap gap-2'>
-          {tags.map((tag) => (
-            <p
-              key={`${name}-${tag.name}`}
-              className={`text-white text-[14px] ${tag.color}`}
-            >
-              #{tag.name}
-            </p>
-          ))}
-        </div>
-        <div className='flex flex-row'>
-        <div className=' flex flex-row'>
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className='black-gradient w-20 h-20 rounded-full flex justify-center items-center cursor-pointer'
-            >
-              <img
-                src={github}
-                alt='source code'
-                className='w-1/2 h-1/2 object-contain'
-              />
-            </div>
-          </div>
-          <div className='flex flex-row'>
-            <div
-              onClick={() => window.open(linkedin_code_link, "_blank")}
-              className='black-gradient w-20 h-20 rounded-full flex justify-center items-center cursor-pointer'
-            >
-              <img
-                src={linkedin}
-                alt='source code'
-                className='w-1/2 h-1/2 object-contain'
-              />
-            </div>
-          </div>
-          <div className='flex flex-row'>
-            <div
-              onClick={() => window.open(live_link, "_blank")}
-              className='black-gradient w-20 h-20 rounded-full flex justify-center items-center cursor-pointer'
-            >
-              <img
-                src={play}
-                alt='source code'
-                className='w-1/2 h-1/2 object-contain'
-              />
-            </div>
-          </div>
-          </div>
-      </Tilt>
-    </motion.div>
+      </PinContainer>
    
     </div>
   );

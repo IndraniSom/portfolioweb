@@ -22,6 +22,9 @@ body:has(.card[data-color="green"]:hover) {
 }
 
 @layer utilities {
+  .scrollbar-hidden {
+    @apply scrollbarHide;
+  }
   .max-container {
     @apply max-w-5xl mx-auto sm:p-16 pb-12 !pt-[126px] px-8 min-h-[calc(100vh-80px)];
   }
@@ -78,7 +81,9 @@ body:has(.card[data-color="green"]:hover) {
     @apply text-black-500 font-extrabold flex-1 text-3xl max-md:text-center;
   }
 }
-
+::-webkit-scrollbar {
+  display: none;
+}
 .glassmorphism {
   background: rgba(8, 116, 239, 0.07);
   backdrop-filter: blur(10px);

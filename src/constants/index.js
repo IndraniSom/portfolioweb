@@ -8,6 +8,7 @@ import {
   html,
   css,
   reactjs,
+  nextjs,
   robo,
   tailwind,
  python,
@@ -46,18 +47,7 @@ const services = [
     title: "Web Developer",
     icon: web,
   },
-  {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
-    title: "Backend Developer",
-    icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
-  },
+  
 ];
 
 const skills = [
@@ -82,7 +72,10 @@ const skills = [
     name: "React JS",
     icon: reactjs,
   },
-  
+  {
+    name: "Next Js",
+    icon: nextjs,
+  },
   {
     name: "Three JS",
     icon: threejs,

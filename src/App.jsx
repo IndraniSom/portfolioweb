@@ -10,18 +10,20 @@ import Contact from "./components/Contact";
  const App = () => {
   return (
     <BrowserRouter>
-      <div className='relative z-0 bg-[radial-gradient(ellipse_at_left,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black'>
-      <Navbar />
-        <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
-         
-          <Home />
-        </div>
+      <div className='relative w-full max-h-screen font-poppins '>
+     
+        
+         <div className="bg-background bg-grid-black/[0.2]">
+         <Navbar/>
+          <Home id="home" />
+        
         <About id="about"/>
         <Project id="project"/>
         
-        <div className='relative z-0 ite'>
+        <div className='relative z-0 bottom-0 '>
           <Contact id="contact"/>
           <Footer />
+        </div> 
         </div>
       </div>
     </BrowserRouter>
