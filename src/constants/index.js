@@ -250,7 +250,7 @@ const projects = [
     image: robo,
     source_code_link: "https://github.com/IndraniSom/Python-Desktop-Assistant",
     linkedin_code_link:"https://www.linkedin.com/posts/indrani-som-258498248_voiceassistant-python-desktopassistant-activity-7106729066455547904-iycE?utm_source=share&utm_medium=member_android",
-    live_link: "https://todolist-indranisom.vercel.app/",
+    live_link: "https://www.linkedin.com/posts/indrani-som-258498248_voiceassistant-python-desktopassistant-activity-7106729066455547904-iycE?utm_source=share&utm_medium=member_android",
   },
   {
     name: "To-do App",
