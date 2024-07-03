@@ -34,7 +34,12 @@ nav a{
     transition:0.3s;
 
 }*/
-
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
  .con{
     margin-top: 10%;
     
