@@ -15,7 +15,7 @@ const Themetogglebutton = () => {
   return (
     <div className="flex items-center justify-center transition-all duration-300">
       <div
-        className={`relative w-12 h-6 md:w-24 md:h-12 bg-gradient-to-r ${darkMode ? 'bg-darkswitch bg-cover bg-no-repeat' : 'bg-lightswitch bg-no-repeat bg-cover'} rounded-full shadow-md p-1 cursor-pointer`}
+        className={`relative w-12 h-6 md:w-24 md:h-12 bg-gradient-to-r ${darkMode ? 'bg-darkswitch2 bg-cover bg-no-repeat' : 'bg-lightswitch bg-no-repeat bg-cover'} rounded-full shadow-md p-1 cursor-pointer`}
         onClick={toggleTheme}
       >
         <div

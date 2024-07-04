@@ -22,6 +22,7 @@
     "clsx": "^2.1.1",
     "flowbite-react": "^0.6.4",
     "framer-motion": "^10.18.0",
+    "gsap": "^3.12.5",
     "install": "^0.13.0",
     "npm": "^10.2.4",
     "react": "^18.2.0",
