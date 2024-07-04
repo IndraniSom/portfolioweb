@@ -17,7 +17,13 @@ module.exports = {
     extend: {
       backgroundImage: {
         'home': "url(/Home.png)",
-        'paper':"url(/paper.png)",// Add other background images here
+        'paper':"url(/paper.png)",
+        "lightswitch":"url(/lightswitch.png)",
+        "darkswitch":"url(/dark.png)",
+        "moonswitch":"url(/moonswitch.png)",
+        "sunswitch":"url(/sunswitch.png)",
+        "darkswitch2":"url(/darkswitch2.png)",
+        // Add other background images here
       },
       colors: {
         white: "#000",

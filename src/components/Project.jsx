@@ -79,7 +79,7 @@ const project = () => {
 
       </div>
       </div>
-      <div className=" h-[900px] relative z-10 mb-6 flex felx-wrap gap-7 overflow-x-auto scrollbar-hide">
+      <div className=" h-[900px] relative z-10 mb-6 flex felx-wrap gap-7 overflow-x-auto scrollbar-hide ">
         {projects.map((project,index)=>(
           <ProjectCard
           key={`project-${index}`}
