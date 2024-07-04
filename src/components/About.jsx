@@ -15,11 +15,21 @@ import { Spotlight } from './ui/spotlight'
 import Star from "./Star";
 import Marquee from 'react-fast-marquee'
 const about = () => {
- 
+  const slideIn = (direction = "left", type = "tween", duration = 0.2, delay = 1) => {
+    return {
+      initial: { x: direction === "left" ? -100 : 100, opacity: 0 },
+      animate: { x: 0, opacity: 1, transition: { type: type, duration: duration, delay: delay } },
+    };
+  };
   return (
     <div id ='about' >
       <div className={` flex xl:flex-row w-full flex-col-reverse gap-2 md:gap-10  justify-center`}>
-        <motion.div variants={slideIn("left", "tween", 0.2, 1)} className='flex-[0.75] bg-transparent p-8 rounded-2xl  justify-center text-center'>
+      <motion.div
+  variants={slideIn("left", "tween", 0.2, 1)}
+  initial="initial"
+  animate="animate"
+  className='flex-[0.75] bg-transparent p-8 rounded-2xl justify-center text-center'
+>
        
             
           

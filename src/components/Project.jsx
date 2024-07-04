@@ -1,5 +1,5 @@
-import React from 'react'
-import {Tilt} from 'react-tilt';
+import React,{useRef} from 'react'
+
 import {motion} from 'framer-motion';
 import {github} from '../assets';
 import {linkedin} from '../assets';
@@ -13,7 +13,10 @@ import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 import Star from "./Star";
 import { PinContainer } from './ui/3d-pin';
+import { HoverBorderGradient } from "./ui/Hover-bordergradient";
+import { FiArrowRight } from 'react-icons/fi';
 const ProjectCarousel = () => {
+  
   const settings = {
     dots: true,
     infinite: true,
@@ -50,6 +53,13 @@ const ProjectCarousel = () => {
   );
 };
 const project = () => {
+  const containerRef = useRef(null);
+  const scrollToNextCard = () => {
+    if (containerRef.current) {
+      // Adjust the value 300 based on the width of your cards + gap to scroll exactly to the next card
+      containerRef.current.scrollLeft += 300;
+    }
+  };
   return (
     <>
     
@@ -79,7 +89,7 @@ const project = () => {
 
       </div>
       </div>
-      <div className=" h-[900px] relative z-10 mb-6 flex felx-wrap gap-7 overflow-x-auto scrollbar-hide ">
+      <div ref={containerRef} className=" h-[900px] relative z-10 flex felx-wrap gap-7 overflow-x-auto scrollbar-hide ">
         {projects.map((project,index)=>(
           <ProjectCard
           key={`project-${index}`}
@@ -88,7 +98,17 @@ const project = () => {
           />
         ))}
       </div>
-      
+      <div className="flex justify-center items-center z-50 -mt-56 ">
+      <HoverBorderGradient
+        onClick={scrollToNextCard}
+        containerClassName="rounded-full"
+        as="button"
+        className="dark:bg-black bg-black-500 text-black dark:text-black-500 flex space-x-2 items-center justify-center"
+      >
+        Scroll Here to see more projects
+        <FiArrowRight className="ml-2" />
+        </HoverBorderGradient>
+        </div>
       </div>
       
       </div>

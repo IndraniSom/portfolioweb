@@ -10,15 +10,23 @@ import { SparklesCore } from './ui/sparkles';
 import { FlipWords } from './ui/flip-words';
 
 const Home = () => {
-  
+  const textVariant = () => {
+    return {
+      hidden: { opacity: 0 },
+      visible: { opacity: 1, transition: { duration: 0.5 } },
+    };
+  };
     const words =  ['Full Stack Web Developer', ' Hackathon Enthusiast', 'Competitive  Coder', 'Open Source Contributor'];
     
   return (
     <>
    <div id='home' className='w-full bg-no-repeat max-h-screen items-center justify-center'>
     
-    <motion.div variants={textVariant()}
-    className='flex flex-col pb-0 rounded-2xl pt-[4rem]'>
+   <motion.div
+  variants={textVariant()}
+  initial="hidden"
+  animate="visible"
+  className='flex flex-col pb-0 rounded-2xl pt-[4rem]'>
       <div className='flex flex-row items-center justify-center '>
         <div className='items-start justify-start'>
     <img src="/homeme.png" alt="model" className='hidden md:flex w-100 h-100'/>
