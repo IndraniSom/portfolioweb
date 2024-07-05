@@ -57,7 +57,7 @@ const project = () => {
   const scrollToNextCard = () => {
     if (containerRef.current) {
       // Adjust the value 300 based on the width of your cards + gap to scroll exactly to the next card
-      containerRef.current.scrollLeft += 300;
+      containerRef.current.scrollLeft += 400;
     }
   };
   return (
