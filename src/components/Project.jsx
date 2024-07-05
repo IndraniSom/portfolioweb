@@ -98,7 +98,7 @@ const project = () => {
           />
         ))}
       </div>
-      <div className="flex justify-center items-center z-50 -mt-56 ">
+      <div className="flex justify-center items-center z-50 -mt-96 ">
       <HoverBorderGradient
         onClick={scrollToNextCard}
         containerClassName="rounded-full"
